@@ -91,7 +91,7 @@ extra:
         termination_from_block: ${TERMINATION_FROM_BLOCK:int:34088325}
         coingecko_price_template: ${COINGECKO_PRICE_TEMPLATE:str:https://api.coingecko.com/api/v3/simple/price?ids=autonolas&vs_currencies=inr&x_cg_demo_api_key={api_key}}
         coingecko_api_key: ${COINGECKO_API_KEY:str:CG-EXLYYH79KBhcWr1h6zoCWDPw}
-        fund_manager_contract_address: ${FUND_MANAGER_CONTRACT_ADDRESS:str:0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db}
+        fund_manager_contract_address: ${FUND_MANAGER_CONTRACT_ADDRESS:str:0x4b60be7fee5b60e474bb2a4e23ce1128b03d10f2}
         fund_token: ${FUND_TOKEN:str:0xe91d153e0b41518a2ce8dd3d7944fa863463a97d}
         transfer_target_address: ${TRANSFER_TARGET_ADDRESS:str:0x615d3278680337e2D39C3bc5042D959C7938B917}
         min_deviation_threshold: ${MIN_DEVIATION_THRESHOLD:int:2}
@@ -142,7 +142,7 @@ extra:
         termination_from_block: ${TERMINATION_FROM_BLOCK:int:34088325}
         coingecko_price_template: ${COINGECKO_PRICE_TEMPLATE:str:https://api.coingecko.com/api/v3/simple/price?ids=autonolas&vs_currencies=inr&x_cg_demo_api_key={api_key}}
         coingecko_api_key: ${COINGECKO_API_KEY:str:CG-EXLYYH79KBhcWr1h6zoCWDPw}
-        fund_manager_contract_address: ${FUND_MANAGER_CONTRACT_ADDRESS:str:0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db}
+        fund_manager_contract_address: ${FUND_MANAGER_CONTRACT_ADDRESS:str0x4b60be7fee5b60e474bb2a4e23ce1128b03d10f2}
         fund_token: ${FUND_TOKEN:str:0xe91d153e0b41518a2ce8dd3d7944fa863463a97d}
         transfer_target_address: ${TRANSFER_TARGET_ADDRESS:str:0x615d3278680337e2D39C3bc5042D959C7938B917}
         min_deviation_threshold: ${MIN_DEVIATION_THRESHOLD:int:2}
@@ -193,7 +193,7 @@ extra:
         termination_from_block: ${TERMINATION_FROM_BLOCK:int:34088325}
         coingecko_price_template: ${COINGECKO_PRICE_TEMPLATE:str:https://api.coingecko.com/api/v3/simple/price?ids=autonolas&vs_currencies=inr&x_cg_demo_api_key={api_key}}
         coingecko_api_key: ${COINGECKO_API_KEY:str:CG-EXLYYH79KBhcWr1h6zoCWDPw}
-        fund_manager_contract_address: ${FUND_MANAGER_CONTRACT_ADDRESS:str:0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db}
+        fund_manager_contract_address: ${FUND_MANAGER_CONTRACT_ADDRESS:str:0x4b60be7fee5b60e474bb2a4e23ce1128b03d10f2}
         fund_token: ${FUND_TOKEN:str:0xe91d153e0b41518a2ce8dd3d7944fa863463a97d}
         transfer_target_address: ${TRANSFER_TARGET_ADDRESS:str:0x615d3278680337e2D39C3bc5042D959C7938B917}
         min_deviation_threshold: ${MIN_DEVIATION_THRESHOLD:int:2}
@@ -244,7 +244,7 @@ extra:
         termination_from_block: ${TERMINATION_FROM_BLOCK:int:34088325}
         coingecko_price_template: ${COINGECKO_PRICE_TEMPLATE:str:https://api.coingecko.com/api/v3/simple/price?ids=autonolas&vs_currencies=inr&x_cg_demo_api_key={api_key}}
         coingecko_api_key: ${COINGECKO_API_KEY:str:CG-EXLYYH79KBhcWr1h6zoCWDPw}
-        fund_manager_contract_address: ${FUND_MANAGER_CONTRACT_ADDRESS:str:0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db}
+        fund_manager_contract_address: ${FUND_MANAGER_CONTRACT_ADDRESS:str:0x4b60be7fee5b60e474bb2a4e23ce1128b03d10f2}
         fund_token: ${FUND_TOKEN:str:0xe91d153e0b41518a2ce8dd3d7944fa863463a97d}
         transfer_target_address: ${TRANSFER_TARGET_ADDRESS:str:0x615d3278680337e2D39C3bc5042D959C7938B917}
         min_deviation_threshold: ${MIN_DEVIATION_THRESHOLD:int:2}
@@ -257,12 +257,12 @@ type: connection
 config:
   ledger_apis:
     ethereum:
-      address: ${ETHEREUM_LEDGER_RPC:str:https://virtual.gnosis.rpc.tenderly.co/81dce020-a5a5-4f6e-814b-64214f6bb720}
+      address: ${ETHEREUM_LEDGER_RPC:str:https://virtual.gnosis.rpc.tenderly.co/323357b3-a0d4-4b98-ae35-d991ca9d6068}
       chain_id: ${ETHEREUM_LEDGER_CHAIN_ID:int:100}
       poa_chain: ${ETHEREUM_LEDGER_IS_POA_CHAIN:bool:false}
       default_gas_price_strategy: ${ETHEREUM_LEDGER_PRICING:str:eip1559}
     gnosis:
-      address: ${GNOSIS_LEDGER_RPC:str:https://virtual.gnosis.rpc.tenderly.co/81dce020-a5a5-4f6e-814b-64214f6bb720}
+      address: ${GNOSIS_LEDGER_RPC:str:https://virtual.gnosis.rpc.tenderly.co/323357b3-a0d4-4b98-ae35-d991ca9d6068}
       chain_id: ${GNOSIS_LEDGER_CHAIN_ID:int:100}
       poa_chain: ${GNOSIS_LEDGER_IS_POA_CHAIN:bool:false}
       default_gas_price_strategy: ${GNOSIS_LEDGER_PRICING:str:eip1559}
