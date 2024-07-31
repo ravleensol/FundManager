@@ -4,7 +4,7 @@ This service interacts with the Fund Manager contract for users to raise funds a
 ## Deployment Details
 - Safe and Service have been deployed to Gnosis Tenderly Fork.
 - Components and Agent have been minted to Ethereum Tenderly Fork.
-- Fund Manager Contract Address: 0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db
+- Fund Manager Contract Address: 0x4b60be7fee5b60e474bb2a4e23ce1128b03d10f2
 - Test Token: 0xe91d153e0b41518a2ce8dd3d7944fa863463a97d
 
 ## Overview
