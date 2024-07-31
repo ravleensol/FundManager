@@ -1,0 +1,462 @@
+[2024-07-31 05:49:52,599] [WARNING] [agent] The kwargs={'multisend_batch_size': 5, 'ipfs_address': 'https://gateway.autonolas.tech/ipfs/', 'service_endpoint_base': 'https://learning.staging.autonolas.tech/', 'coingecko_price_template': 'https://api.coingecko.com/api/v3/simple/price?ids=autonolas&vs_currencies=inr&x_cg_demo_api_key={api_key}', 'coingecko_api_key': 'CG-EXLYYH79KBhcWr1h6zoCWDPw', 'default_chain_id': 'gnosis', 'decision_threshold': 130} passed to params have not been set!
+[2024-07-31 05:49:53,004] [INFO] [agent] HTTP Server has connected to port: 8000.
+[2024-07-31 05:49:53,826] [INFO] [agent] Connecting to libp2p node acn.staging.autonolas.tech:9005. Attempt 1
+[2024-07-31 05:50:05,622] [INFO] [agent] Successfully connected to libp2p node acn.staging.autonolas.tech:9005
+[2024-07-31 05:50:05,636] [INFO] [agent] Entered in the 'registration_startup_round' round for period 0
+[2024-07-31 05:50:05,642] [INFO] [agent] Start processing messages...
+[2024-07-31 05:50:05,654] [INFO] [agent] Entered in the 'registration_startup_behaviour' behaviour
+[2024-07-31 05:50:05,654] [INFO] [agent] Synchronizing with Tendermint...
+[2024-07-31 05:50:08,824] [INFO] [agent] local height == remote == 1; Synchronization complete.
+[2024-07-31 05:50:08,826] [INFO] [agent] Sharing Tendermint config on start-up?: False
+[2024-07-31 05:50:11,070] [WARNING] [agent] Slashing has not been enabled!
+[2024-07-31 05:50:11,071] [INFO] [agent] 'registration_startup_round' round is done with event: Event.DONE
+[2024-07-31 05:50:11,071] [INFO] [agent] Entered in the 'a_p_i_check_round' round for period 0
+[2024-07-31 05:50:11,073] [INFO] [agent] Entered in the 'a_p_i_check_behaviour' behaviour
+[2024-07-31 05:50:11,073] [INFO] [agent] 0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db
+[2024-07-31 05:50:12,241] [INFO] [agent] These are the proposals: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('80960298c1fb44da5571c0d4bad4acae73e305694f1c2d6ef9b8fad26d98740e', 'de04b4cee2c1aa1a2e3d9d8b4723f8170192b764a74f1c76a4399f974111b2ff'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, False, 1722404552)]},target=1)
+[2024-07-31 05:50:13,271] [INFO] [agent] Successfully stored new_proposal.json to IPFS with hash: QmayFX1xQZDEHX3Tq1PC3aazWXMmrchJ5Yr14xCajBBbFk
+[2024-07-31 05:50:13,271] [INFO] [agent] The IPFS hash is : QmayFX1xQZDEHX3Tq1PC3aazWXMmrchJ5Yr14xCajBBbFk
+[2024-07-31 05:50:15,150] [INFO] [agent] 'a_p_i_check_round' round is done with event: Event.DONE
+[2024-07-31 05:50:15,154] [INFO] [agent] Entered in the 'decision_making_round' round for period 0
+[2024-07-31 05:50:15,159] [INFO] [agent] Entered in the 'decision_making_behaviour' behaviour
+[2024-07-31 05:50:15,814] [INFO] [agent] Retrieved 1 objects from ipfs.
+[2024-07-31 05:50:16,918] [INFO] [agent] Proposals are: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('247496517ae3d78f32580be630c62180a8568140901a76b52dfd3ce3c6b109ef', 'becc6e2cc9591142dd550833ce97f4b47614ff849d577d4c22ba9a772bad2eab'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, False, 1722404552)]},target=1)
+[2024-07-31 05:50:16,919] [INFO] [agent] Maximum amount: 10000 , Minimum amount 10
+[2024-07-31 05:50:16,919] [INFO] [agent] Proposal amount: 100
+[2024-07-31 05:50:16,919] [INFO] [agent] Proposal amount: 200
+[2024-07-31 05:50:16,919] [INFO] [agent] DECISION MADE: transact
+[2024-07-31 05:50:18,000] [INFO] [agent] 'decision_making_round' round is done with event: Event.TRANSACT
+[2024-07-31 05:50:18,000] [INFO] [agent] Entered in the 'tx_preparation_round' round for period 0
+[2024-07-31 05:50:18,002] [INFO] [agent] Entered in the 'tx_preparation_behaviour' behaviour
+[2024-07-31 05:50:18,003] [INFO] [agent] contract address:0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db
+[2024-07-31 05:50:18,003] [INFO] [agent] amount:200
+[2024-07-31 05:50:18,077] [INFO] [agent] APPROVE TXN: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('6b564c7516c115ab73501b992525c763b6329926744ab9ce73a0cedafa19ddf2', 'cef93241d1b54d041218961500ca6cad881499dde70466d440c2d668ebf7594d'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': '0x095ea7b3000000000000000000000000bcf253651cfb56355a56aaed5c7cfbaf25dd04db00000000000000000000000000000000000000000000000000000000000000c8'},target=1)
+[2024-07-31 05:50:18,126] [INFO] [agent] EXECUTE TXN: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('f6f19bf0330b8dd7e32075328076ddae2b2b89da1e897737048a28073e61e9d4', '0ddb4839ec767328350ea7cfbc4563380f1382158b41ee697d514ea7eeb31e65'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': '0x0d61b5190000000000000000000000000000000000000000000000000000000000000001'},target=1)
+[2024-07-31 05:50:18,601] [INFO] [agent] PREPARED MULTISEND TXN: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('d4ae6a955f127a2f6e12ca4c1686ae4ea6510f5a615cdae3398bf8f58b9c0422', 'f3d99afea1b9ca88f3be50bf0ec39e46c81729ab1ed3e3cb41c0074b55893d91'),message_id=-1,performative=raw_transaction,raw_transaction=RawTransaction: ledger_id=ethereum, body={'data': '0x8d80ff0a0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000011200e91d153e0b41518a2ce8dd3d7944fa863463a97d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044095ea7b3000000000000000000000000bcf253651cfb56355a56aaed5c7cfbaf25dd04db00000000000000000000000000000000000000000000000000000000000000c800bcf253651cfb56355a56aaed5c7cfbaf25dd04db000000000000000000000000000000000000000000000000000000000000000,target=1)
+[2024-07-31 05:50:18,601] [INFO] [agent] Preparing to call contract with the following parameters:
+[2024-07-31 05:50:18,601] [INFO] [agent] Data: b'\x8d\x80\xff\n\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00 \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x12\x00\xe9\x1d\x15>\x0bAQ\x8a,\xe8\xdd=yD\xfa\x864c\xa9}\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00D\t^\xa7\xb3\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xbc\xf2Se\x1c\xfbV5ZV\xaa\xed\\|\xfb\xaf%\xdd\x04\xdb\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xc8\x00\xbc\xf2Se\x1c\xfbV5ZV\xaa\xed\\|\xfb\xaf%\xdd\x04\xdb\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00$\ra\xb5\x19\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+[2024-07-31 05:50:18,601] [INFO] [agent] To Address: 0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761
+[2024-07-31 05:50:18,601] [INFO] [agent] Is Multisend: True
+[2024-07-31 05:50:20,931] [INFO] [agent] RESPONSE:Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('b745f597044a045693948372ab14fb1ecb3b53f2c532443d1ff2f0b3e9ac95ba', 'cd4b8d6bcedcf2f0d00eff46caec6e7560b42a7f54e8d43dffe084a0ed7c460d'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'tx_hash': '0xd6cd79e8321eecb0c0e6eb690924ca574d3521ae59c5434524d37c9414dc04f9'},target=1)
+[2024-07-31 05:50:20,932] [INFO] [agent] MULTISEND TRANSACTIONS: d6cd79e8321eecb0c0e6eb690924ca574d3521ae59c5434524d37c9414dc04f9000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e776101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000x00000000000000000000000000000000000000000x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008d80ff0a0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000011200e91d153e0b41518a2ce8dd3d7944fa863463a97d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044095ea7b3000000000000000000000000bcf253651cfb56355a56aaed5c7cfbaf25dd04db00000000000000000000000000000000000000000000000000000000000000c800bcf253651cfb56355a56aaed5c7cfbaf25dd04db000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000240d61b51900000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000
+[2024-07-31 05:50:21,967] [INFO] [agent] 'tx_preparation_round' round is done with event: Event.DONE
+[2024-07-31 05:50:21,967] [INFO] [agent] Entered in the 'randomness_transaction_submission_round' round for period 0
+[2024-07-31 05:50:21,972] [INFO] [agent] Entered in the 'randomness_transaction_submission_behaviour' behaviour
+[2024-07-31 05:50:21,973] [INFO] [agent] Retrieving DRAND values from api...
+[2024-07-31 05:50:22,442] [INFO] [agent] Verifying DRAND values...
+[2024-07-31 05:50:24,347] [INFO] [agent] DRAND check successful.
+[2024-07-31 05:50:24,347] [INFO] [agent] Retrieved DRAND values: {'round': 4232466, 'signature': 'a725fdd0885207bc5b7620475e2a49c3412e464de972a9a3d8952eaaf318c43b88d8ce62c02f195c3fe9aac5c9009382024941fdc473f177ea79daa7631a6d9d3cf655ce1b0b543373151a6dc1f3a7f1622a66a07fc0cbdd5354f1393cedf747', 'randomness': 'd8262130a2012fb9467796b80365ce5337d12860bc481d83e9f6ccba159de167'}.
+[2024-07-31 05:50:26,619] [INFO] [agent] 'randomness_transaction_submission_round' round is done with event: Event.DONE
+[2024-07-31 05:50:26,620] [INFO] [agent] Entered in the 'select_keeper_transaction_submission_a_round' round for period 0
+[2024-07-31 05:50:26,625] [INFO] [agent] Entered in the 'select_keeper_transaction_submission_behaviour_a' behaviour
+[2024-07-31 05:50:26,625] [INFO] [agent] Selected a new keeper: 0x36A6DdCAcb10f495d9c61005C216247Ef9ADfe61.
+[2024-07-31 05:50:27,918] [INFO] [agent] 'select_keeper_transaction_submission_a_round' round is done with event: Event.DONE
+[2024-07-31 05:50:27,918] [INFO] [agent] Entered in the 'collect_signature_round' round for period 0
+[2024-07-31 05:50:27,924] [INFO] [agent] Entered in the 'signature_behaviour' behaviour
+[2024-07-31 05:50:27,924] [INFO] [agent] Agreement reached on tx data: d6cd79e8321eecb0c0e6eb690924ca574d3521ae59c5434524d37c9414dc04f9000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e776101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000x00000000000000000000000000000000000000000x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008d80ff0a0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000011200e91d153e0b41518a2ce8dd3d7944fa863463a97d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044095ea7b3000000000000000000000000bcf253651cfb56355a56aaed5c7cfbaf25dd04db00000000000000000000000000000000000000000000000000000000000000c800bcf253651cfb56355a56aaed5c7cfbaf25dd04db000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000240d61b51900000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000
+[2024-07-31 05:50:27,986] [INFO] [agent] Signature: 4b4ff2e91641a4ced73ecadf0a5f6f0474cbd51b6d7be0c1251e14b6892444106de5d7b1d7aea7b45b8a5666a1581433899a14e1d4feae9d1e7270eee92f98251c
+[2024-07-31 05:50:29,237] [INFO] [agent] 'collect_signature_round' round is done with event: Event.DONE
+[2024-07-31 05:50:29,237] [INFO] [agent] Entered in the 'finalization_round' round for period 0
+[2024-07-31 05:50:29,242] [INFO] [agent] Entered in the 'finalize_behaviour' behaviour
+[2024-07-31 05:50:29,244] [INFO] [agent] Waiting for the keeper to do its keeping: 0x36A6DdCAcb10f495d9c61005C216247Ef9ADfe61
+[2024-07-31 05:50:33,276] [INFO] [agent] 'finalization_round' round is done with event: Event.DONE
+[2024-07-31 05:50:33,276] [INFO] [agent] Entered in the 'validate_transaction_round' round for period 0
+[2024-07-31 05:50:33,284] [INFO] [agent] Entered in the 'validate_transaction_behaviour' behaviour
+[2024-07-31 05:50:41,080] [INFO] Trying to get transaction and receipt from hash 0x161efdf956de7cdf45938e8b72bdbb375298bf1b2035278d0d9e3c86deafe649
+[2024-07-31 05:50:41,967] [INFO] Received transaction: AttributeDict({'blockHash': HexBytes('0x0757cc3d1b5e063b6c60b7255226b8f24daadf4a7190b2ae3fd4a6535cdbc06c'), 'blockNumber': 35229554, 'transactionIndex': 0, 'hash': HexBytes('0x161efdf956de7cdf45938e8b72bdbb375298bf1b2035278d0d9e3c86deafe649'), 'from': '0x36A6DdCAcb10f495d9c61005C216247Ef9ADfe61', 'to': '0xec4E8b905308db1aE103AA9c49A55195eF4fBE29', 'input': HexBytes('0x6a761202000000000000000000000000a238cbeb142c10ef7ad8442c6d1f9e89e07e77610000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002e000000000000000000000000000000000000000000000000000000000000001648d80ff0a0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000011200e91d153e0b41518a2ce8dd3d7944fa863463a97d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044095ea7b3000000000000000000000000bcf253651cfb56355a56aaed5c7cfbaf25dd04db00000000000000000000000000000000000000000000000000000000000000c800bcf253651cfb56355a56aaed5c7cfbaf25dd04db000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000240d61b51900000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000104c7b1b6f22ef5ebd9f8f1cbf0ff96cdf18f37be248a7d5eed66eeff48cb78e32f6d95aad39c05e1debf4264983d930e53911885d677df1fa6b68990990532baa41cd4493e11e936043586c6a0dcff53181e58695289ab09724f5f86a527637eaed81ff5282d345efcb4959041ee17ad83494233e581af64d80a68ce9714ff2ce2461c149a50bf55d47334fe1e8d2492dc528d6799b1de68116625298012482f056dc11e31c4b444ea6600ecd7b411ed53fa1d00fc5a84921ab21590167e4d59de59771c4b4ff2e91641a4ced73ecadf0a5f6f0474cbd51b6d7be0c1251e14b6892444106de5d7b1d7aea7b45b8a5666a1581433899a14e1d4feae9d1e7270eee92f98251c00000000000000000000000000000000000000000000000000000000'), 'nonce': 9, 'value': 0, 'gas': 163749, 'gasPrice': 4000000000, 'maxPriorityFeePerGas': 3000000000, 'maxFeePerGas': 4000000000, 'accessList': [], 'chainId': 100, 'type': 2, 'v': 0, 'r': HexBytes('0x7945c69154617ecaf1774f757d324255521abc082db8526e6e91d385e298f214'), 's': HexBytes('0x4dc16d190f81d53df7d4d8d57a1459830cdaac51127b7af71a7774355cf32d9c')}), with receipt: {'type': 2, 'status': 1, 'cumulativeGasUsed': 141763, 'logsBloom': '0x00000000400000000000000108000000000000080000000010000000040000000000000000202000000000000000000000000000000000000000010000200000000000000000000000000008000000000008040000000000000000000000000000000000000000000000000000000000000000000000000000000210080000000000000000000004000000000000000000000000000008000000000000000000020000000400000000010000000004000000000000000800000000000000000000000002000000000000000000020040000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000', 'logs': [{'address': '0xec4E8b905308db1aE103AA9c49A55195eF4fBE29', 'topics': ['0x66753cd2356569ee081232e3be8909b950e0a76c1f8460c3a5e3c2be32b11bed'], 'data': '0x000000000000000000000000a238cbeb142c10ef7ad8442c6d1f9e89e07e7761000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001600000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000044000000000000000000000000000000000000000000000000000000000000001648d80ff0a0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000011200e91d153e0b41518a2ce8dd3d7944fa863463a97d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044095ea7b3000000000000000000000000bcf253651cfb56355a56aaed5c7cfbaf25dd04db00000000000000000000000000000000000000000000000000000000000000c800bcf253651cfb56355a56aaed5c7cfbaf25dd04db000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000240d61b51900000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000104c7b1b6f22ef5ebd9f8f1cbf0ff96cdf18f37be248a7d5eed66eeff48cb78e32f6d95aad39c05e1debf4264983d930e53911885d677df1fa6b68990990532baa41cd4493e11e936043586c6a0dcff53181e58695289ab09724f5f86a527637eaed81ff5282d345efcb4959041ee17ad83494233e581af64d80a68ce9714ff2ce2461c149a50bf55d47334fe1e8d2492dc528d6799b1de68116625298012482f056dc11e31c4b444ea6600ecd7b411ed53fa1d00fc5a84921ab21590167e4d59de59771c4b4ff2e91641a4ced73ecadf0a5f6f0474cbd51b6d7be0c1251e14b6892444106de5d7b1d7aea7b45b8a5666a1581433899a14e1d4feae9d1e7270eee92f98251c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000000500000000000000000000000036a6ddcacb10f495d9c61005c216247ef9adfe610000000000000000000000000000000000000000000000000000000000000003', 'blockNumber': 35229554, 'transactionHash': '0x161efdf956de7cdf45938e8b72bdbb375298bf1b2035278d0d9e3c86deafe649', 'transactionIndex': 0, 'blockHash': '0x0757cc3d1b5e063b6c60b7255226b8f24daadf4a7190b2ae3fd4a6535cdbc06c', 'logIndex': 0, 'removed': False}, {'address': '0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d', 'topics': ['0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925', '0x000000000000000000000000ec4e8b905308db1ae103aa9c49a55195ef4fbe29', '0x000000000000000000000000bcf253651cfb56355a56aaed5c7cfbaf25dd04db'], 'data': '0x00000000000000000000000000000000000000000000000000000000000000c8', 'blockNumber': 35229554, 'transactionHash': '0x161efdf956de7cdf45938e8b72bdbb375298bf1b2035278d0d9e3c86deafe649', 'transactionIndex': 0, 'blockHash': '0x0757cc3d1b5e063b6c60b7255226b8f24daadf4a7190b2ae3fd4a6535cdbc06c', 'logIndex': 1, 'removed': False}, {'address': '0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d', 'topics': ['0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef', '0x000000000000000000000000ec4e8b905308db1ae103aa9c49a55195ef4fbe29', '0x000000000000000000000000a2c152da86e5165727d9974c0c6b5157172a56bb'], 'data': '0x00000000000000000000000000000000000000000000000000000000000000c8', 'blockNumber': 35229554, 'transactionHash': '0x161efdf956de7cdf45938e8b72bdbb375298bf1b2035278d0d9e3c86deafe649', 'transactionIndex': 0, 'blockHash': '0x0757cc3d1b5e063b6c60b7255226b8f24daadf4a7190b2ae3fd4a6535cdbc06c', 'logIndex': 2, 'removed': False}, {'address': '0xec4E8b905308db1aE103AA9c49A55195eF4fBE29', 'topics': ['0x442e715f626346e8c54381002da614f62bee8d27386535b2521ec8540898556e'], 'data': '0xd6cd79e8321eecb0c0e6eb690924ca574d3521ae59c5434524d37c9414dc04f90000000000000000000000000000000000000000000000000000000000000000', 'blockNumber': 35229554, 'transactionHash': '0x161efdf956de7cdf45938e8b72bdbb375298bf1b2035278d0d9e3c86deafe649', 'transactionIndex': 0, 'blockHash': '0x0757cc3d1b5e063b6c60b7255226b8f24daadf4a7190b2ae3fd4a6535cdbc06c', 'logIndex': 3, 'removed': False}], 'transactionHash': '0x161efdf956de7cdf45938e8b72bdbb375298bf1b2035278d0d9e3c86deafe649', 'from': '0x36A6DdCAcb10f495d9c61005C216247Ef9ADfe61', 'to': '0xec4E8b905308db1aE103AA9c49A55195eF4fBE29', 'contractAddress': None, 'gasUsed': 141763, 'effectiveGasPrice': 4000000000, 'blockHash': '0x0757cc3d1b5e063b6c60b7255226b8f24daadf4a7190b2ae3fd4a6535cdbc06c', 'blockNumber': 35229554, 'transactionIndex': 0, 'blobGasUsed': 0}.
+[2024-07-31 05:50:41,981] [INFO] [agent] Verified result: True
+[2024-07-31 05:50:41,981] [INFO] [agent] Finalized with transaction hash: 0x161efdf956de7cdf45938e8b72bdbb375298bf1b2035278d0d9e3c86deafe649
+[2024-07-31 05:50:42,699] [INFO] [agent] 'validate_transaction_round' round is done with event: Event.DONE
+[2024-07-31 05:50:42,700] [INFO] [agent] Entered in the 'reset_and_pause_round' round for period 0
+[2024-07-31 05:50:42,707] [INFO] [agent] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-07-31 05:50:51,104] [INFO] [agent] Period end.
+[2024-07-31 05:50:51,972] [INFO] [agent] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-07-31 05:50:51,973] [INFO] [agent] Entered in the 'a_p_i_check_round' round for period 1
+[2024-07-31 05:50:51,977] [INFO] [agent] Entered in the 'a_p_i_check_behaviour' behaviour
+[2024-07-31 05:50:51,978] [INFO] [agent] 0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db
+[2024-07-31 05:50:52,966] [INFO] [agent] These are the proposals: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('9cac2ad499a609e6fec45919c803a1abe596ef7198998008f7b1a8e0fbf7510c', '25c6b4422f22de99df7c4efe7687d62a47e1b6f3abdbb40ff7ad1f9c99704b85'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:50:54,188] [INFO] [agent] Successfully stored new_proposal.json to IPFS with hash: QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:50:54,188] [INFO] [agent] The IPFS hash is : QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:50:55,976] [INFO] [agent] 'a_p_i_check_round' round is done with event: Event.DONE
+[2024-07-31 05:50:55,977] [INFO] [agent] Entered in the 'decision_making_round' round for period 1
+[2024-07-31 05:50:55,985] [INFO] [agent] Entered in the 'decision_making_behaviour' behaviour
+[2024-07-31 05:50:56,708] [INFO] [agent] Retrieved 1 objects from ipfs.
+[2024-07-31 05:50:57,675] [INFO] [agent] Proposals are: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('c633b3f57dd2df36e6a1703acc6d27ee14ecb69e4793dc4b171b05eef41b0d14', '75cc139f3f1abe746bbed7d89bca58a0c6ababc9f234160598f3d9fd85d1fa0c'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:50:57,678] [INFO] [agent] Maximum amount: 10000 , Minimum amount 10
+[2024-07-31 05:50:57,680] [INFO] [agent] Proposal amount: 100
+[2024-07-31 05:50:57,682] [INFO] [agent] Proposal amount: 200
+[2024-07-31 05:50:57,683] [INFO] [agent] No unexecuted proposals within the range; deciding to HOLD
+[2024-07-31 05:50:57,683] [INFO] [agent] DECISION MADE: done
+[2024-07-31 05:50:58,737] [INFO] [agent] 'decision_making_round' round is done with event: Event.DONE
+[2024-07-31 05:50:58,738] [INFO] [agent] Entered in the 'reset_and_pause_round' round for period 1
+[2024-07-31 05:50:58,741] [INFO] [agent] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-07-31 05:51:07,043] [INFO] [agent] Period end.
+[2024-07-31 05:51:08,298] [INFO] [agent] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-07-31 05:51:08,300] [INFO] [agent] Entered in the 'a_p_i_check_round' round for period 2
+[2024-07-31 05:51:08,303] [INFO] [agent] Entered in the 'a_p_i_check_behaviour' behaviour
+[2024-07-31 05:51:08,304] [INFO] [agent] 0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db
+[2024-07-31 05:51:09,279] [INFO] [agent] These are the proposals: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('3bf18553f72a3af0835a0ccce06cad28e00f5755af2cd81c55011a86620f6be0', 'f9b862e3aa678e882dc9c37feaab4233ce6953ed2d8728880ce3c4e764dce6b7'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:51:10,154] [INFO] [agent] Successfully stored new_proposal.json to IPFS with hash: QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:51:10,154] [INFO] [agent] The IPFS hash is : QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:51:12,307] [INFO] [agent] 'a_p_i_check_round' round is done with event: Event.DONE
+[2024-07-31 05:51:12,308] [INFO] [agent] Entered in the 'decision_making_round' round for period 2
+[2024-07-31 05:51:12,314] [INFO] [agent] Entered in the 'decision_making_behaviour' behaviour
+[2024-07-31 05:51:13,027] [INFO] [agent] Retrieved 1 objects from ipfs.
+[2024-07-31 05:51:14,020] [INFO] [agent] Proposals are: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('3eca7e69dfb1fbeb7389f905052ef0d55395fbe281ec04b3e5692aba29cd916c', '59578910235fa0b66da4c1193e9a866513359f5f1cdf91fac05621e091730d4d'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:51:14,020] [INFO] [agent] Maximum amount: 10000 , Minimum amount 10
+[2024-07-31 05:51:14,020] [INFO] [agent] Proposal amount: 100
+[2024-07-31 05:51:14,020] [INFO] [agent] Proposal amount: 200
+[2024-07-31 05:51:14,020] [INFO] [agent] No unexecuted proposals within the range; deciding to HOLD
+[2024-07-31 05:51:14,021] [INFO] [agent] DECISION MADE: done
+[2024-07-31 05:51:15,005] [INFO] [agent] 'decision_making_round' round is done with event: Event.DONE
+[2024-07-31 05:51:15,006] [INFO] [agent] Entered in the 'reset_and_pause_round' round for period 2
+[2024-07-31 05:51:15,014] [INFO] [agent] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-07-31 05:51:23,373] [INFO] [agent] Period end.
+[2024-07-31 05:51:24,546] [INFO] [agent] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-07-31 05:51:24,548] [INFO] [agent] Entered in the 'a_p_i_check_round' round for period 3
+[2024-07-31 05:51:24,552] [INFO] [agent] Entered in the 'a_p_i_check_behaviour' behaviour
+[2024-07-31 05:51:24,553] [INFO] [agent] 0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db
+[2024-07-31 05:51:25,529] [INFO] [agent] These are the proposals: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('4417baacfed2ffdace0c511b221c47996a6ad85b0bed950d97200f82cc14a2f3', 'fcef39440150524bbc4aa3a4c185f6b60b9b88bcde1d2235a33c3d53b2f0d9a5'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:51:26,835] [INFO] [agent] Successfully stored new_proposal.json to IPFS with hash: QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:51:26,836] [INFO] [agent] The IPFS hash is : QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:51:28,800] [INFO] [agent] 'a_p_i_check_round' round is done with event: Event.DONE
+[2024-07-31 05:51:28,817] [INFO] [agent] Entered in the 'decision_making_round' round for period 3
+[2024-07-31 05:51:28,821] [INFO] [agent] Entered in the 'decision_making_behaviour' behaviour
+[2024-07-31 05:51:29,531] [INFO] [agent] Retrieved 1 objects from ipfs.
+[2024-07-31 05:51:30,499] [INFO] [agent] Proposals are: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('cb3e9385b80ff67215083dabed9ecf97ce03577081cb63bf08017a47e2360eef', '3c569180bf299e09b36706d725add076ffa8902be061f9e3cb75ac9135e551e4'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:51:30,499] [INFO] [agent] Maximum amount: 10000 , Minimum amount 10
+[2024-07-31 05:51:30,499] [INFO] [agent] Proposal amount: 100
+[2024-07-31 05:51:30,499] [INFO] [agent] Proposal amount: 200
+[2024-07-31 05:51:30,500] [INFO] [agent] No unexecuted proposals within the range; deciding to HOLD
+[2024-07-31 05:51:30,500] [INFO] [agent] DECISION MADE: done
+[2024-07-31 05:51:31,373] [INFO] [agent] 'decision_making_round' round is done with event: Event.DONE
+[2024-07-31 05:51:31,373] [INFO] [agent] Entered in the 'reset_and_pause_round' round for period 3
+[2024-07-31 05:51:31,379] [INFO] [agent] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-07-31 05:51:39,778] [INFO] [agent] Period end.
+[2024-07-31 05:51:40,776] [INFO] [agent] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-07-31 05:51:40,776] [INFO] [agent] Entered in the 'a_p_i_check_round' round for period 4
+[2024-07-31 05:51:40,782] [INFO] [agent] Entered in the 'a_p_i_check_behaviour' behaviour
+[2024-07-31 05:51:40,782] [INFO] [agent] 0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db
+[2024-07-31 05:51:41,813] [INFO] [agent] These are the proposals: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('68606d3f906aec1d6f5b76a9a89935fd62ff4d4975ec262733a3eb0e7c706df8', 'b4707c5fe47716ae82961d4a0ebb7fdc59f6698c22690875d691b0dfa9271bc0'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:51:42,966] [INFO] [agent] Successfully stored new_proposal.json to IPFS with hash: QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:51:42,966] [INFO] [agent] The IPFS hash is : QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:51:44,836] [INFO] [agent] 'a_p_i_check_round' round is done with event: Event.DONE
+[2024-07-31 05:51:44,836] [INFO] [agent] Entered in the 'decision_making_round' round for period 4
+[2024-07-31 05:51:44,842] [INFO] [agent] Entered in the 'decision_making_behaviour' behaviour
+[2024-07-31 05:51:45,497] [INFO] [agent] Retrieved 1 objects from ipfs.
+[2024-07-31 05:51:46,472] [INFO] [agent] Proposals are: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('cbeb014af7a5a26c273103506c58680a18e9c9f187a28fa9bbcd261a78544738', '4f77a42c178c95d9614db983ae9e2cba63f04cb336508ccb78e9db632f08652d'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:51:46,472] [INFO] [agent] Maximum amount: 10000 , Minimum amount 10
+[2024-07-31 05:51:46,472] [INFO] [agent] Proposal amount: 100
+[2024-07-31 05:51:46,472] [INFO] [agent] Proposal amount: 200
+[2024-07-31 05:51:46,473] [INFO] [agent] No unexecuted proposals within the range; deciding to HOLD
+[2024-07-31 05:51:46,473] [INFO] [agent] DECISION MADE: done
+[2024-07-31 05:51:47,828] [INFO] [agent] 'decision_making_round' round is done with event: Event.DONE
+[2024-07-31 05:51:47,831] [INFO] [agent] Entered in the 'reset_and_pause_round' round for period 4
+[2024-07-31 05:51:47,854] [INFO] [agent] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-07-31 05:51:55,967] [INFO] [agent] Period end.
+[2024-07-31 05:51:57,323] [INFO] [agent] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-07-31 05:51:57,325] [INFO] [agent] Entered in the 'a_p_i_check_round' round for period 5
+[2024-07-31 05:51:57,335] [INFO] [agent] Entered in the 'a_p_i_check_behaviour' behaviour
+[2024-07-31 05:51:57,336] [INFO] [agent] 0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db
+[2024-07-31 05:51:58,339] [INFO] [agent] These are the proposals: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('7a82a1c54efab50316fba646e6024f16223bdc780c3ef5de630c982cc070dec3', '96a560f9c90015a0abd9983d89aefcc45eff445ebf284613a09525e0f74ddf88'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:51:59,530] [INFO] [agent] Successfully stored new_proposal.json to IPFS with hash: QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:51:59,530] [INFO] [agent] The IPFS hash is : QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:52:01,295] [INFO] [agent] 'a_p_i_check_round' round is done with event: Event.DONE
+[2024-07-31 05:52:01,297] [INFO] [agent] Entered in the 'decision_making_round' round for period 5
+[2024-07-31 05:52:01,306] [INFO] [agent] Entered in the 'decision_making_behaviour' behaviour
+[2024-07-31 05:52:01,905] [INFO] [agent] Retrieved 1 objects from ipfs.
+[2024-07-31 05:52:02,920] [INFO] [agent] Proposals are: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('aa62d52a435d083706bb825acc91ad63f57c904518c497cf12c994e167599423', '1a5c12ca20be4fd424c4678facbda90f897ac266200f5b25ff7b774db08ba987'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:52:02,920] [INFO] [agent] Maximum amount: 10000 , Minimum amount 10
+[2024-07-31 05:52:02,920] [INFO] [agent] Proposal amount: 100
+[2024-07-31 05:52:02,921] [INFO] [agent] Proposal amount: 200
+[2024-07-31 05:52:02,921] [INFO] [agent] No unexecuted proposals within the range; deciding to HOLD
+[2024-07-31 05:52:02,921] [INFO] [agent] DECISION MADE: done
+[2024-07-31 05:52:04,149] [INFO] [agent] 'decision_making_round' round is done with event: Event.DONE
+[2024-07-31 05:52:04,149] [INFO] [agent] Entered in the 'reset_and_pause_round' round for period 5
+[2024-07-31 05:52:04,153] [INFO] [agent] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-07-31 05:52:12,388] [INFO] [agent] Period end.
+[2024-07-31 05:52:13,470] [INFO] [agent] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-07-31 05:52:13,471] [INFO] [agent] Entered in the 'a_p_i_check_round' round for period 6
+[2024-07-31 05:52:13,477] [INFO] [agent] Entered in the 'a_p_i_check_behaviour' behaviour
+[2024-07-31 05:52:13,478] [INFO] [agent] 0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db
+[2024-07-31 05:52:14,510] [INFO] [agent] These are the proposals: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('16355457d23aae6d36a7a50515928518904b3d2afada9aafa501a0e71fc5743d', 'deeb8be0a228eef35bfbd8f2b7c6ac79f3591aa8ff4faa8ba8913cbc60a8002d'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:52:15,670] [INFO] [agent] Successfully stored new_proposal.json to IPFS with hash: QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:52:15,671] [INFO] [agent] The IPFS hash is : QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:52:17,720] [INFO] [agent] 'a_p_i_check_round' round is done with event: Event.DONE
+[2024-07-31 05:52:17,724] [INFO] [agent] Entered in the 'decision_making_round' round for period 6
+[2024-07-31 05:52:17,737] [INFO] [agent] Entered in the 'decision_making_behaviour' behaviour
+[2024-07-31 05:52:18,573] [INFO] [agent] Retrieved 1 objects from ipfs.
+[2024-07-31 05:52:19,577] [INFO] [agent] Proposals are: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('9c667bc9784b36188bb3fba7ae7411202180744a2bfba279767bf6e1951405ba', '049a37885f6d54d627cb992dc7865df3ca78b40128d8d8efe4de48cae494ef32'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:52:19,578] [INFO] [agent] Maximum amount: 10000 , Minimum amount 10
+[2024-07-31 05:52:19,578] [INFO] [agent] Proposal amount: 100
+[2024-07-31 05:52:19,578] [INFO] [agent] Proposal amount: 200
+[2024-07-31 05:52:19,578] [INFO] [agent] No unexecuted proposals within the range; deciding to HOLD
+[2024-07-31 05:52:19,578] [INFO] [agent] DECISION MADE: done
+[2024-07-31 05:52:20,178] [INFO] [agent] 'decision_making_round' round is done with event: Event.DONE
+[2024-07-31 05:52:20,181] [INFO] [agent] Entered in the 'reset_and_pause_round' round for period 6
+[2024-07-31 05:52:20,190] [INFO] [agent] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-07-31 05:52:28,679] [INFO] [agent] Period end.
+[2024-07-31 05:52:29,767] [INFO] [agent] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-07-31 05:52:29,768] [INFO] [agent] Entered in the 'a_p_i_check_round' round for period 7
+[2024-07-31 05:52:29,774] [INFO] [agent] Entered in the 'a_p_i_check_behaviour' behaviour
+[2024-07-31 05:52:29,774] [INFO] [agent] 0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db
+[2024-07-31 05:52:30,777] [INFO] [agent] These are the proposals: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('dd51d51226b8787db568ce9b43155f564bb10655679773713c503972276148a2', 'b5b6ac6964c18cbbebd432a3127714055344d6553f70b6c4a5f0dc956b0ae360'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:52:31,592] [INFO] [agent] Successfully stored new_proposal.json to IPFS with hash: QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:52:31,592] [INFO] [agent] The IPFS hash is : QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:52:33,666] [INFO] [agent] 'a_p_i_check_round' round is done with event: Event.DONE
+[2024-07-31 05:52:33,666] [INFO] [agent] Entered in the 'decision_making_round' round for period 7
+[2024-07-31 05:52:33,672] [INFO] [agent] Entered in the 'decision_making_behaviour' behaviour
+[2024-07-31 05:52:34,544] [INFO] [agent] Retrieved 1 objects from ipfs.
+[2024-07-31 05:52:35,517] [INFO] [agent] Proposals are: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('aba1970a1aa86a98793be2dd356218ee1945509dd24e3df94d6c18968ac6281e', 'cc53fc50813b167da84be2cb71e71c7502988c69b9dc7ec2d2c905888c1d5127'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:52:35,518] [INFO] [agent] Maximum amount: 10000 , Minimum amount 10
+[2024-07-31 05:52:35,518] [INFO] [agent] Proposal amount: 100
+[2024-07-31 05:52:35,518] [INFO] [agent] Proposal amount: 200
+[2024-07-31 05:52:35,518] [INFO] [agent] No unexecuted proposals within the range; deciding to HOLD
+[2024-07-31 05:52:35,518] [INFO] [agent] DECISION MADE: done
+[2024-07-31 05:52:36,316] [INFO] [agent] 'decision_making_round' round is done with event: Event.DONE
+[2024-07-31 05:52:36,316] [INFO] [agent] Entered in the 'reset_and_pause_round' round for period 7
+[2024-07-31 05:52:36,323] [INFO] [agent] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-07-31 05:52:44,734] [INFO] [agent] Period end.
+[2024-07-31 05:52:45,980] [INFO] [agent] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-07-31 05:52:45,980] [INFO] [agent] Entered in the 'a_p_i_check_round' round for period 8
+[2024-07-31 05:52:45,994] [INFO] [agent] Entered in the 'a_p_i_check_behaviour' behaviour
+[2024-07-31 05:52:45,994] [INFO] [agent] 0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db
+[2024-07-31 05:52:46,981] [INFO] [agent] These are the proposals: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('1e234290de782853dbd6ddc51bd6d6d12d8dd8f35a054984ff8ddda5dd1e5d28', '2a36f2023736274a86903a61f06efebbe45001c9016f8b63b77ca63b3f2e6cfa'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:52:48,251] [INFO] [agent] Successfully stored new_proposal.json to IPFS with hash: QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:52:48,251] [INFO] [agent] The IPFS hash is : QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:52:50,116] [INFO] [agent] 'a_p_i_check_round' round is done with event: Event.DONE
+[2024-07-31 05:52:50,124] [INFO] [agent] Entered in the 'decision_making_round' round for period 8
+[2024-07-31 05:52:50,130] [INFO] [agent] Entered in the 'decision_making_behaviour' behaviour
+[2024-07-31 05:52:50,834] [INFO] [agent] Retrieved 1 objects from ipfs.
+[2024-07-31 05:52:51,813] [INFO] [agent] Proposals are: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('6e0ff69230aad1c377f31dead02331819ec60bbb44305ffe85ba14950fdb6fe6', 'f748c26819ffa05eb5fbe6491b176f9d1cd45f712637c9bc8768c64ea2899e03'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:52:51,813] [INFO] [agent] Maximum amount: 10000 , Minimum amount 10
+[2024-07-31 05:52:51,814] [INFO] [agent] Proposal amount: 100
+[2024-07-31 05:52:51,814] [INFO] [agent] Proposal amount: 200
+[2024-07-31 05:52:51,814] [INFO] [agent] No unexecuted proposals within the range; deciding to HOLD
+[2024-07-31 05:52:51,815] [INFO] [agent] DECISION MADE: done
+[2024-07-31 05:52:52,839] [INFO] [agent] 'decision_making_round' round is done with event: Event.DONE
+[2024-07-31 05:52:52,840] [INFO] [agent] Entered in the 'reset_and_pause_round' round for period 8
+[2024-07-31 05:52:52,843] [INFO] [agent] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-07-31 05:53:01,105] [INFO] [agent] Period end.
+[2024-07-31 05:53:02,244] [INFO] [agent] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-07-31 05:53:02,244] [INFO] [agent] Entered in the 'a_p_i_check_round' round for period 9
+[2024-07-31 05:53:02,249] [INFO] [agent] Entered in the 'a_p_i_check_behaviour' behaviour
+[2024-07-31 05:53:02,249] [INFO] [agent] 0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db
+[2024-07-31 05:53:03,205] [INFO] [agent] These are the proposals: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('0ddd5271c6d7631f27940ba0b69a652b793aa128ddd2c3e7377b67e33e545de3', '808835f6380a0fe19c359a1f4c99cf489d8bfb8b43be8d6a7520fecf5574deef'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:53:04,506] [INFO] [agent] Successfully stored new_proposal.json to IPFS with hash: QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:53:04,508] [INFO] [agent] The IPFS hash is : QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:53:06,257] [INFO] [agent] 'a_p_i_check_round' round is done with event: Event.DONE
+[2024-07-31 05:53:06,257] [INFO] [agent] Entered in the 'decision_making_round' round for period 9
+[2024-07-31 05:53:06,262] [INFO] [agent] Entered in the 'decision_making_behaviour' behaviour
+[2024-07-31 05:53:06,957] [INFO] [agent] Retrieved 1 objects from ipfs.
+[2024-07-31 05:53:07,920] [INFO] [agent] Proposals are: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('a88a64b5d0d7a7d9b8e1663e273cd57ff366ba0d1920adf2b66f4d81262847da', '9d8a4a86809b9467ede4b9268791ba0864659124c102a60b6710fb47bab28445'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:53:07,920] [INFO] [agent] Maximum amount: 10000 , Minimum amount 10
+[2024-07-31 05:53:07,920] [INFO] [agent] Proposal amount: 100
+[2024-07-31 05:53:07,921] [INFO] [agent] Proposal amount: 200
+[2024-07-31 05:53:07,921] [INFO] [agent] No unexecuted proposals within the range; deciding to HOLD
+[2024-07-31 05:53:07,921] [INFO] [agent] DECISION MADE: done
+[2024-07-31 05:53:08,924] [INFO] [agent] 'decision_making_round' round is done with event: Event.DONE
+[2024-07-31 05:53:08,924] [INFO] [agent] Entered in the 'reset_and_pause_round' round for period 9
+[2024-07-31 05:53:08,937] [INFO] [agent] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-07-31 05:53:12,210] [INFO] [agent] Resetting tendermint node at end of period=9.
+[2024-07-31 05:53:12,337] [INFO] [agent] connection at EOF, stop receiving loop.
+[2024-07-31 05:53:12,337] [INFO] [agent] connection at EOF, stop receiving loop.
+[2024-07-31 05:53:12,338] [INFO] [agent] connection at EOF, stop receiving loop.
+[2024-07-31 05:53:12,344] [INFO] [agent] connection at EOF, stop receiving loop.
+[2024-07-31 05:53:12,581] [INFO] [agent] Resetting tendermint node successful!
+[2024-07-31 05:53:12,597] [ERROR] [agent] Tendermint not accepting transactions yet, trying again!
+[2024-07-31 05:53:13,608] [INFO] [agent] local height == remote height == 0; continuing execution...
+[2024-07-31 05:53:14,973] [INFO] [agent] Period end.
+[2024-07-31 05:53:15,981] [INFO] [agent] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-07-31 05:53:15,981] [INFO] [agent] Entered in the 'a_p_i_check_round' round for period 10
+[2024-07-31 05:53:15,988] [INFO] [agent] Entered in the 'a_p_i_check_behaviour' behaviour
+[2024-07-31 05:53:15,988] [INFO] [agent] 0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db
+[2024-07-31 05:53:16,974] [INFO] [agent] These are the proposals: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('7cefd086fc5a2e50a6475e591280305882eefef68360b756670b23ff299fb7a6', 'ac67c97ef4e60d62ea6b051223a049fe6f92a2f6a87bd7e6b031ee27d906ee4a'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:53:18,374] [INFO] [agent] Successfully stored new_proposal.json to IPFS with hash: QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:53:18,376] [INFO] [agent] The IPFS hash is : QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:53:20,121] [INFO] [agent] 'a_p_i_check_round' round is done with event: Event.DONE
+[2024-07-31 05:53:20,122] [INFO] [agent] Entered in the 'decision_making_round' round for period 10
+[2024-07-31 05:53:20,128] [INFO] [agent] Entered in the 'decision_making_behaviour' behaviour
+[2024-07-31 05:53:20,823] [INFO] [agent] Retrieved 1 objects from ipfs.
+[2024-07-31 05:53:21,799] [INFO] [agent] Proposals are: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('1f99c70c4c6da042f34d8cc3b1a111c172e603b6cf42d6019bf9a5a851b1ec3a', 'e26ae67d75bee36c06635987ffd912163cdc1f53be6a414d363430e5b4b8946c'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:53:21,800] [INFO] [agent] Maximum amount: 10000 , Minimum amount 10
+[2024-07-31 05:53:21,800] [INFO] [agent] Proposal amount: 100
+[2024-07-31 05:53:21,800] [INFO] [agent] Proposal amount: 200
+[2024-07-31 05:53:21,800] [INFO] [agent] No unexecuted proposals within the range; deciding to HOLD
+[2024-07-31 05:53:21,800] [INFO] [agent] DECISION MADE: done
+[2024-07-31 05:53:22,825] [INFO] [agent] 'decision_making_round' round is done with event: Event.DONE
+[2024-07-31 05:53:22,826] [INFO] [agent] Entered in the 'reset_and_pause_round' round for period 10
+[2024-07-31 05:53:22,830] [INFO] [agent] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-07-31 05:53:31,158] [INFO] [agent] Period end.
+[2024-07-31 05:53:32,306] [INFO] [agent] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-07-31 05:53:32,307] [INFO] [agent] Entered in the 'a_p_i_check_round' round for period 11
+[2024-07-31 05:53:32,313] [INFO] [agent] Entered in the 'a_p_i_check_behaviour' behaviour
+[2024-07-31 05:53:32,313] [INFO] [agent] 0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db
+[2024-07-31 05:53:33,296] [INFO] [agent] These are the proposals: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('c01298a9ae440e9f19a4a8771f29f42b619f4867b70b0dc251177087ec3db2d3', 'c8fe1d43389949efbd90044ddf6bcf31cafc2f6a96b3c855b4ec3b8e45f5920e'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:53:34,293] [INFO] [agent] Successfully stored new_proposal.json to IPFS with hash: QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:53:34,293] [INFO] [agent] The IPFS hash is : QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:53:36,246] [INFO] [agent] 'a_p_i_check_round' round is done with event: Event.DONE
+[2024-07-31 05:53:36,246] [INFO] [agent] Entered in the 'decision_making_round' round for period 11
+[2024-07-31 05:53:36,253] [INFO] [agent] Entered in the 'decision_making_behaviour' behaviour
+[2024-07-31 05:53:36,956] [INFO] [agent] Retrieved 1 objects from ipfs.
+[2024-07-31 05:53:37,932] [INFO] [agent] Proposals are: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('1fe99021e467a2ec0d06668f1e8d7ee2785384ab3577f3defc885955fe41a420', '19c34266e7e3037ffc8444a2eba420f3c4889b2ef86843878d01e121a773f672'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:53:37,933] [INFO] [agent] Maximum amount: 10000 , Minimum amount 10
+[2024-07-31 05:53:37,933] [INFO] [agent] Proposal amount: 100
+[2024-07-31 05:53:37,933] [INFO] [agent] Proposal amount: 200
+[2024-07-31 05:53:37,934] [INFO] [agent] No unexecuted proposals within the range; deciding to HOLD
+[2024-07-31 05:53:37,934] [INFO] [agent] DECISION MADE: done
+[2024-07-31 05:53:38,926] [INFO] [agent] 'decision_making_round' round is done with event: Event.DONE
+[2024-07-31 05:53:38,926] [INFO] [agent] Entered in the 'reset_and_pause_round' round for period 11
+[2024-07-31 05:53:38,929] [INFO] [agent] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-07-31 05:53:47,318] [INFO] [agent] Period end.
+[2024-07-31 05:53:48,324] [INFO] [agent] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-07-31 05:53:48,325] [INFO] [agent] Entered in the 'a_p_i_check_round' round for period 12
+[2024-07-31 05:53:48,329] [INFO] [agent] Entered in the 'a_p_i_check_behaviour' behaviour
+[2024-07-31 05:53:48,330] [INFO] [agent] 0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db
+[2024-07-31 05:53:49,306] [INFO] [agent] These are the proposals: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('bd6fedb7df3461368e11af3446213d3d37031ce8893b6169475f9ba21bb685ab', '8c1e73a7f3c942d19dea9b5052c4fbc801e68de9c6c85adbe68d42a0f2a58a6f'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:53:50,296] [INFO] [agent] Successfully stored new_proposal.json to IPFS with hash: QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:53:50,297] [INFO] [agent] The IPFS hash is : QmaVKY1v1pXPXY4eFVi2NSJiF8vWtrFPFXgfaTNQeSzXHy
+[2024-07-31 05:53:52,532] [INFO] [agent] 'a_p_i_check_round' round is done with event: Event.DONE
+[2024-07-31 05:53:52,532] [INFO] [agent] Entered in the 'decision_making_round' round for period 12
+[2024-07-31 05:53:52,535] [INFO] [agent] Entered in the 'decision_making_behaviour' behaviour
+[2024-07-31 05:53:53,149] [INFO] [agent] Retrieved 1 objects from ipfs.
+[2024-07-31 05:53:54,153] [INFO] [agent] Proposals are: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,dialogue_reference=('053d72cfa328c5e625e8cb5d388f008c0e5add97882154e687969d72dab94c88', 'f6730c1ad6df3d6fe21314325bd233345076a703b91d2fc678aa092c34664358'),message_id=-1,performative=state,state=State: ledger_id=ethereum, body={'data': [(0, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 100, True, 1722403107), (1, '0xa2c152DA86e5165727D9974C0C6b5157172a56bb', 200, True, 1722404552)]},target=1)
+[2024-07-31 05:53:54,153] [INFO] [agent] Maximum amount: 10000 , Minimum amount 10
+[2024-07-31 05:53:54,154] [INFO] [agent] Proposal amount: 100
+[2024-07-31 05:53:54,154] [INFO] [agent] Proposal amount: 200
+[2024-07-31 05:53:54,154] [INFO] [agent] No unexecuted proposals within the range; deciding to HOLD
+[2024-07-31 05:53:54,154] [INFO] [agent] DECISION MADE: done
+[2024-07-31 05:53:55,168] [INFO] [agent] 'decision_making_round' round is done with event: Event.DONE
+[2024-07-31 05:53:55,168] [INFO] [agent] Entered in the 'reset_and_pause_round' round for period 12
+[2024-07-31 05:53:55,174] [INFO] [agent] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-07-31 05:54:03,532] [INFO] [agent] Period end.
+[2024-07-31 05:54:04,646] [INFO] [agent] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-07-31 05:54:04,652] [INFO] [agent] Entered in the 'a_p_i_check_round' round for period 13
+[2024-07-31 05:54:04,656] [INFO] [agent] Entered in the 'a_p_i_check_behaviour' behaviour
+[2024-07-31 05:54:04,656] [INFO] [agent] 0xbcf253651cfb56355a56aaed5c7cfbaf25dd04db
+[2024-07-31 05:54:16,004] [INFO] [agent] These are the proposals: Message(sender=valory/ledger:0.19.0,to=valory/learning_chained_abci:0.1.0,code=500,data=b'',dialogue_reference=('08b7a35fb6f95d77f1ef6fd17706bc857051d9539d82d5a8fc2ff3bc85ae8382', '6cf2b9bef7e5358fac0e8ac1f03c0fa6619a78de2b93ecea57a1dbc74e57005e'),message=Traceback (most recent call last):
+
+  File "/usr/local/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+
+urllib3.exceptions.NewConnectionError: <ur,message_id=-1,performative=error,target=1)
+[2024-07-31 05:54:16,007] [ERROR] [agent] <An error occurred during act of behaviour valory/learning_chained_abci:0.1.0/LearningChainedConsensusBehaviour:
+Traceback (most recent call last):
+
+  File "/usr/local/lib/python3.11/site-packages/aea/exceptions.py", line 106, in enforce
+    raise exception_class(exception_text)
+
+aea.exceptions.AEAEnforceError: 'state' content is not set.
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/usr/local/lib/python3.11/site-packages/aea/skills/base.py", line 440, in act_wrapper
+    raise AEAActException(
+
+aea.exceptions.AEAActException: An error occurred during act of behaviour valory/learning_chained_abci:0.1.0/APICheckBehaviour:
+Traceback (most recent call last):
+
+  File "/root/agent/vendor/valory/protocols/contract_api/message.py", line 225, in state
+    enforce(self.is_set("state"), "'state' content is not set.")
+
+  File "/usr/local/lib/python3.11/site-packages/aea/exceptions.py", line 106, in enforce
+    raise exception_class(exception_text)
+
+aea.exceptions.AEAEnforceError: 'state' content is not set.
+
+> raised during `<bound method Behaviour.act_wrapper of <behaviours.LearningChainedConsensusBehaviour object at 0x7f32ef49ce50>>`
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aea/skills/base.py", line 435, in act_wrapper
+    self.act()
+  File "/root/agent/vendor/valory/skills/abstract_round_abci/behaviour_utils.py", line 319, in act
+    self.__handle_waiting_for_message()
+  File "/root/agent/vendor/valory/skills/abstract_round_abci/behaviour_utils.py", line 355, in __handle_waiting_for_message
+    self.__get_generator_act().send(self.__message)
+  File "/root/agent/vendor/valory/skills/abstract_round_abci/behaviour_utils.py", line 732, in async_act_wrapper
+    yield from self.async_act()
+  File "/root/agent/vendor/valory/skills/learning_abci/behaviours.py", line 106, in async_act
+    new_proposal = contract_response.state.body["data"]
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/agent/vendor/valory/protocols/contract_api/message.py", line 225, in state
+    enforce(self.is_set("state"), "'state' content is not set.")
+  File "/usr/local/lib/python3.11/site-packages/aea/exceptions.py", line 106, in enforce
+    raise exception_class(exception_text)
+aea.exceptions.AEAEnforceError: 'state' content is not set.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aea/skills/base.py", line 435, in act_wrapper
+    self.act()
+  File "/root/agent/vendor/valory/skills/abstract_round_abci/behaviours.py", line 376, in act
+    self.current_behaviour.act_wrapper()
+  File "/usr/local/lib/python3.11/site-packages/aea/skills/base.py", line 440, in act_wrapper
+    raise AEAActException(
+aea.exceptions.AEAActException: An error occurred during act of behaviour valory/learning_chained_abci:0.1.0/APICheckBehaviour:
+Traceback (most recent call last):
+
+  File "/root/agent/vendor/valory/protocols/contract_api/message.py", line 225, in state
+    enforce(self.is_set("state"), "'state' content is not set.")
+
+  File "/usr/local/lib/python3.11/site-packages/aea/exceptions.py", line 106, in enforce
+    raise exception_class(exception_text)
+
+aea.exceptions.AEAEnforceError: 'state' content is not set.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aea/agent_loop.py", line 286, in _execution_control
+    return fn(*(args or []), **(kwargs or {}))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aea/skills/base.py", line 440, in act_wrapper
+    raise AEAActException(
+aea.exceptions.AEAActException: An error occurred during act of behaviour valory/learning_chained_abci:0.1.0/LearningChainedConsensusBehaviour:
+Traceback (most recent call last):
+
+  File "/usr/local/lib/python3.11/site-packages/aea/exceptions.py", line 106, in enforce
+    raise exception_class(exception_text)
+
+aea.exceptions.AEAEnforceError: 'state' content is not set.
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/usr/local/lib/python3.11/site-packages/aea/skills/base.py", line 440, in act_wrapper
+    raise AEAActException(
+
+aea.exceptions.AEAActException: An error occurred during act of behaviour valory/learning_chained_abci:0.1.0/APICheckBehaviour:
+Traceback (most recent call last):
+
+  File "/root/agent/vendor/valory/protocols/contract_api/message.py", line 225, in state
+    enforce(self.is_set("state"), "'state' content is not set.")
+
+  File "/usr/local/lib/python3.11/site-packages/aea/exceptions.py", line 106, in enforce
+    raise exception_class(exception_text)
+
+aea.exceptions.AEAEnforceError: 'state' content is not set.
+
+
+[2024-07-31 05:54:16,013] [INFO] [agent] HTTP Client has shutdown on port: 8000.
+[2024-07-31 05:54:16,013] [INFO] [agent] HTTP Server has shutdown on port: 8000.
+[2024-07-31 05:54:16,618] [ERROR] [agent] Unhandled exception AttributeError: 'NoneType' object has no attribute 'put'

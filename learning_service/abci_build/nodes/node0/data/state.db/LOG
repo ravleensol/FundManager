@@ -1,0 +1,18 @@
+=============== Jul 31, 2024 (UTC) ===============
+05:53:12.826441 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+05:53:12.833536 db@open opening
+05:53:12.841217 version@stat F·[] S·0B[] Sc·[]
+05:53:12.848106 db@janitor F·2 G·0
+05:53:12.848131 db@open done T·14.568115ms
+05:54:21.303824 db@close closing
+05:54:21.303870 db@close done T·45.822µs
+=============== Jul 31, 2024 (UTC) ===============
+05:54:21.770695 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+05:54:21.770888 version@stat F·[] S·0B[] Sc·[]
+05:54:21.770918 db@open opening
+05:54:21.770981 journal@recovery F·1
+05:54:21.771190 journal@recovery recovering @1
+05:54:21.775672 memdb@flush created L0@2 N·189 S·17KiB "abc..y:1,v6":"val..y:9,v31"
+05:54:21.783319 version@stat F·[1] S·17KiB[17KiB] Sc·[0.25]
+05:54:21.799426 db@janitor F·3 G·0
+05:54:21.799580 db@open done T·28.652591ms

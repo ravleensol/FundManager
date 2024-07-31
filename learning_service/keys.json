@@ -1,0 +1,22 @@
+[
+  {
+    "address": "0x89F473ddaa456699E2b41e8710E8F7Af1eDF17CD",
+    "private_key": "0x89b4fefb8125532d3c5b0d58679d18ed5b2baa7df3325c99eea3e5e82bef9d7c",
+    "ledger": "ethereum"
+  },
+  {
+    "address": "0x718c2b25AB7A9D889Ce6CA57EA12D457Faff77F7",
+    "private_key": "0xbc1f8f1b49f46eb61c94b57b5e0f9b16d932469d297d3556af23a5025c2841bc",
+    "ledger": "ethereum"
+  },
+  {
+    "address": "0x36A6DdCAcb10f495d9c61005C216247Ef9ADfe61",
+    "private_key": "0xb192cb89ade39fe0758cc8c2233b2abddef1dd66263a780ec07c8d7e288067ce",
+    "ledger": "ethereum"
+  },
+  {
+    "address": "0x8Cfa2F945B9C1324Ee0adcb76BcCA8DFBFFCC347",
+    "private_key": "0x916af0a9fc172875ad4ffc0b4dbfc6da27e67fb54ca7a38110ffd5d4e346c847",
+    "ledger": "ethereum"
+  }
+]

@@ -1,0 +1,21 @@
+name: fund_manager
+author: valory
+version: 0.1.0
+type: contract
+description: The contract package for the Fund Manager contract.
+license: Apache-2.0
+aea_version: '>=1.0.0, <2.0.0'
+fingerprint:
+  __init__.py: bafybeiee5r2eqo5hezhvg2my3w2oempp4u4xgxm4dqnjjelydftkqo3wea
+  build/FundManager.json: bafybeia4vhtvmgibcgsuhny27ll26p2zxjzp7nfsi4e34kfnnhutpgp2nm
+  contract.py: bafybeigcuvtnfux7qwkcag2mnzji5pmncjkgaibjrzn7uuvms4ayh25thu
+fingerprint_ignore_patterns: []
+contracts: []
+class_name: FundManagerContract
+contract_interface_paths:
+  ethereum: build/FundManager.json
+dependencies:
+  open-aea-ledger-ethereum:
+    version: ==1.50.0
+  web3:
+    version: <7,>=6.0.0
