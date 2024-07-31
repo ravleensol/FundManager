@@ -16,7 +16,7 @@ The service fetches the proposals of the funds and then decides whether to trans
   1. If the amount of proposal is within th range of max_proposal_aount and min_proposal_amount then:
      Transaction will take place and funds will be transfered to users's account.
 
-  2. If the amount of proposal is within th range of max_proposal_aount and min_proposal_amount then:
+  2. If the amount of proposal is within th range of max_proposal_aount and min_proposal_amount and not executed then:
      Transaction will not take place and it willl revert with "No proposals within the range; deciding to HOLD".
 
 ### Transaction Workflow
